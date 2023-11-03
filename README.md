@@ -10,6 +10,8 @@ Experimentation of building a custom connector for Boomi Integration
 
 - GET https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=pending&status=sold
 
+- GET https://petstore.swagger.io/v2/pet/202311031
+
 ---
 
 ## Connector Notes
