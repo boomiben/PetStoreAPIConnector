@@ -18,7 +18,7 @@ Experimentation of building a custom connector for Boomi Integration
 
 [Connector Architecture and Components - Boomi](https://help.boomi.com/docs/Atomsphere/Integration/Connectors/int-Custom_connector_architecture_and_components_dad3e913-e94e-4b29-8e44-89aa475b09b8)
 
-
+[Demo Connector Build Video - Boomi](https://players.brightcove.net/6261520393001/hM0svWhBB_default/index.html?videoId=6274648564001)
 
 
 
