@@ -22,7 +22,5 @@ Experimentation of building a custom connector for Boomi Integration
 
 [Demo Connector Build Video - Boomi](https://players.brightcove.net/6261520393001/hM0svWhBB_default/index.html?videoId=6274648564001)
 
-x
-
 
 
