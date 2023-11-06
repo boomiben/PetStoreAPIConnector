@@ -28,3 +28,13 @@ replay_pid*
 
 # Ignore Gradle build output directory
 build
+
+# Ignore other Gradle folders
+gradle
+lib
+gradlew
+gradlew.bat
+settings.gradle
+
+#Ignore .gitattributes
+.gitattributes
