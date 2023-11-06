@@ -22,5 +22,7 @@ Experimentation of building a custom connector for Boomi Integration
 
 [Demo Connector Build Video - Boomi](https://players.brightcove.net/6261520393001/hM0svWhBB_default/index.html?videoId=6274648564001)
 
+[Building an OpenAPI Connector using the Gradle DSL plugin - Boomi](https://help.boomi.com/docs/atomsphere/integration/connectors/int-building_openapi_connector_gradle_dsl_47599de7-a802-44a6-b904-28646d08fcf2/)
+
 
 
