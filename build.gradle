@@ -36,7 +36,7 @@ openAPIConnector {
                     path "/pet/findByStatus"}
             }
             "Store Inventory" {
-                operationsId {
+                operationId {
                     method "GET"
                     path "/store/inventory"
                 }
