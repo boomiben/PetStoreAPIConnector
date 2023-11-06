@@ -38,3 +38,4 @@ settings.gradle
 
 #Ignore .gitattributes
 .gitattributes
+.DS_Store

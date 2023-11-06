@@ -6,13 +6,6 @@ connector {
    sdkVersion "2.15.5"
 }
 
-repositories {
-    maven {
-        name = "Connector SDK Repository"
-        url = "https://boomisdk.s3.amazonaws.com/releases"
-    }
-}
-
 ext.host = "https://petstore3.swagger.io/api/v3"
 
 openAPIConnector {
@@ -28,7 +21,7 @@ openAPIConnector {
        "Get" {
            "Pet" {
                operationId {
-                   method "POST"
+                   method "GET"
                    path "/pet"
                }
            }
