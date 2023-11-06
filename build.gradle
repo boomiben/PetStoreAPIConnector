@@ -6,25 +6,89 @@ connector {
    sdkVersion "2.15.5"
 }
 
-ext.host = "https://petstore3.swagger.io/api/v3"
-
 openAPIConnector {
-   openApiSpecification "$host/openapi.json"
-   server host
-   authType "NONE"
-   operations {
-       "Add" {
-           "Pet" {
-               operationId "addPet"
-           }
-       }
-       "Get" {
-           "Pet" {
-               operationId {
-                   method "GET"
-                   path "/pet"
-               }
-           }
-       }
-   }
+    openApiSpecification "https://petstore3.swagger.io/api/v3/openapi.json"
+    server "https://petstore3.swagger.io/api/v3"
+    cookieScope "GLOBAL"
+    includePublicCert {
+        label "Custom Public Cert"
+    }
+    includePrivateCert false
+    authType {
+        defaultValue "CUSTOM"
+        includedValues "OAUTH2", "DIGEST", "NONE", "CUSTOM", "BASIC"
+        label "Custom label here"
+        helpText "Custom helpText here"
+    }
+
+    operations {
+
+        "Retrieve" {
+            "Pet" {
+                operationId {
+                    method "GET"
+                    path "/pet/{petId}"
+                }
+            }
+            "Pets by Status"{
+                operationId{
+                    method "GET"
+                    path "/pet/findByStatus"}
+            }
+            "Store Inventory" {
+                operationsId {
+                    method "GET"
+                    path "/store/inventory"
+                }
+            }
+        }
+
+        "Upload" {
+            "Pet Picture" {
+                operationId {
+                    method "POST"
+                    path "/pet/{petId}/uploadImage"
+                }
+            }
+        }
+
+        "Create" {
+            "Pet" {
+                operationId {
+                    method "POST"
+                    path "/pet"
+                }
+            }
+            "Store Order" {
+                operationId {
+                    method "POST"
+                    path "/store/order"
+                }
+            }
+        }
+
+        "Update" {
+            "Pet" {
+                operationId {
+                    method "PUT"
+                    path "/pet"
+                }
+            }
+        }
+
+        "Remove"{
+            "Pet" {
+                operationId {
+                    method "Delete"
+                    path "/pet/{petId}"
+                }
+            }
+            "Purchase Order" {
+                operationId {
+                    method "Delete"
+                    path "/store/order/{orderId}"
+                }
+            }
+        }
+    }
 }
