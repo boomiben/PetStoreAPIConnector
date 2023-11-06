@@ -1,3 +1,10 @@
+repositories {
+            maven {
+                name = "Connector SDK Repository"
+                url = "https://boomisdk.s3.amazonaws.com/releases"
+            }
+}
+
 plugins {
    id 'com.boomi.connector' version '0.4.0'
 }
