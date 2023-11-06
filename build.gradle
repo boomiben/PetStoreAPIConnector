@@ -14,12 +14,7 @@ openAPIConnector {
         label "Custom Public Cert"
     }
     includePrivateCert false
-    authType {
-        defaultValue "CUSTOM"
-        includedValues "OAUTH2", "DIGEST", "NONE", "CUSTOM", "BASIC"
-        label "Custom label here"
-        helpText "Custom helpText here"
-    }
+    authType "NONE"
 
     operations {
 
