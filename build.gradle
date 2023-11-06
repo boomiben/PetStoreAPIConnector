@@ -10,9 +10,7 @@ openAPIConnector {
     openApiSpecification "https://petstore3.swagger.io/api/v3/openapi.json"
     server "https://petstore3.swagger.io/api/v3"
     cookieScope "GLOBAL"
-    includePublicCert {
-        label "Custom Public Cert"
-    }
+    includePublicCert false
     includePrivateCert false
     authType "NONE"
 
