@@ -71,13 +71,13 @@ openAPIConnector {
         "Remove"{
             "Pet" {
                 operationId {
-                    method "Delete"
+                    method "DELETE"
                     path "/pet/{petId}"
                 }
             }
             "Purchase Order" {
                 operationId {
-                    method "Delete"
+                    method "DELETE"
                     path "/store/order/{orderId}"
                 }
             }
