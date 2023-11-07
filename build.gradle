@@ -7,11 +7,9 @@ connector {
 }
 
 openAPIConnector {
-    // Using a modified copy of the specification for experimental purposes
-    // openApiSpecification "https://petstore3.swagger.io/api/v3/openapi.json"
+    //openApiSpecification "https://petstore3.swagger.io/api/v3/openapi.json"
     openApiSpecification "https://raw.githubusercontent.com/boomiben/PetStoreAPIConnector/main/petstore-modified.json"
     server "https://petstore3.swagger.io/api/v3"
-    // cookieScope "GLOBAL"
     includePublicCert false
     includePrivateCert false
     authType "NONE"
